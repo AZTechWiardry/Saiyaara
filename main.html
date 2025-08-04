@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heartbreak Memory Lane</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Background Video -->
+    <video class="video-background" autoplay muted loop>
+        <source src="./Saiyaara Title Song _ Ahaan Panday, Aneet Padda _ Tanishk Bagchi, Faheem A, Arslan N _ Irshad Kamil.mp4" type="video/mp4">
+        <!-- Fallback for browsers that don't support the video -->
+    </video>
+    
+    <!-- Dark Overlay -->
+    <div class="overlay"></div>
+    
+    <!-- Background Audio -->
+    <audio id="bgAudio" autoplay loop>
+        <source src="./song.mp3" type="audio/mpeg">
+        <!-- Note: In a real implementation, you'd use an actual sad love song -->
+    </audio>
+    <button onclick="document.getElementById('bgAudio').play()" style="position:fixed;top:20px;right:20px;z-index:1000;">
+    🎶
+</button>
+
+    <!-- Title Overlay -->
+    <div class="title-overlay">
+        <h1 class="main-title">Saiyaara</h1>
+        <p class="subtitle">Tarow main ek tanha tara..<br> Khud jal ke jo roshan karde jag ye sara...<br> Vo aawara dhund raha hai Dil Yaara</p>
+    </div>
+
+    <!-- Floating Hearts -->
+    <div class="floating-hearts" id="heartsContainer"></div>
+
+    <!-- Cards Container -->
+    <div class="cards-container">
+        <div class="cards-wrapper">
+            <div class="cards-track" id="cardsTrack">
+                <!-- Memory Cards will be dynamically generated -->
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

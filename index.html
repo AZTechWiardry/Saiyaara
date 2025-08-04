@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saiyaara - A Journey Through Heartbreak</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!-- Background Video -->
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="data:video/mp4;base64," type="video/mp4">
+            <!-- Placeholder for video - in real implementation, add your heartbreak video URL here -->
+        </video>
+    </div>
+
+    <!-- Floating Hearts -->
+    <div class="floating-hearts" id="heartsContainer"></div>
+
+    <!-- Stars -->
+    <div class="stars" id="starsContainer"></div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="message-container">
+            <div class="main-message">
+                "Kabhi kisi ka itna khayal rakha tha ki apne aap ko bhool gaya tha...<br>
+                Ab woh kisi aur ki duniya mein hai,<br>
+                Aur main yahaan... khud se hi juda."
+            </div>
+            <button class="continue-button" onclick="continueToNextPage()">
+                Aage badhte hain... par yaadon ke saath 💔
+            </button>
+        </div>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="backgroundAudio" loop>
+        <source src="data:audio/mpeg;base64," type="audio/mpeg">
+        <!-- Placeholder for audio - add your instrumental track URL here -->
+    </audio>
+
+    <!-- Audio Control Button -->
+    <button class="audio-control" onclick="toggleAudio()" id="audioBtn">🔊</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
